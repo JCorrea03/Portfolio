@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Contact</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="top">
+                <div class="logo">
+                    <span>Portfolio</span>
+                </div>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+            <div class="user">
+                <img src="perfil.jpg" alt="me" class="perfil">
+                <div>
+                    <p class="bold">Jose Correa</p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="bx bxs-user-circle" id="myself"></i>
+                        <span class="nav-item">Myself</span>
+                    </a>
+                    <span class="tooltip">Myself</span>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <i class="bx bx-laptop" id="projects"></i>
+                        <span class="nav-item">Projects</span>
+                    </a>
+                    <span class="tooltip">Projects</span>
+                </li>
+                <li>
+                    <a href="hobbies.html">
+                        <i class="bx bx-football" id="hobbies"></i>
+                        <span class="nav-item">Hobbies</span>
+                    </a>
+                    <span class="tooltip">Hobbies</span>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="bx bxs-phone" id="contact"></i>
+                        <span class="nav-item">Contact</span>
+                    </a>
+                    <span class="tooltip">Contact Me</span>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <div class="wrapper">
+                    <img src="images/telephone.jpeg" id="telephone">
+                    <div class="textbox">
+                        <h1>Contact Me</h1>
+                        <p>You can follow me on instagram:<a href="https://www.instagram.com/mordred.damon/"> @mordred.damon</a></p>
+                        <p><br>Or you can send an email to jose.correa1@eia.edu.co</p>
+                        <br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+
+        btn.onclick = function() {
+            sidebar.classList.toggle('active');
+        };
+    </script>
+</html>

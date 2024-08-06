@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.perfil{
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid;
+}
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:max-content; 
+    width: 80px;
+    background-color: rgb(166, 0, 0);
+    padding: .4rem .8rem;
+    transition: all 0.5s ease;
+}
+.sidebar.active ~ .main-content{
+    left: 250px;
+    width: calc(100% - 250px);
+}
+.sidebar.active {
+    width: 250px;
+}
+.sidebar #btn {
+    position: absolute;
+    color: white;
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.sidebar.active #btn {
+    left: 90%;
+}
+.sidebar .top .logo {
+    color: white;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+}
+.sidebar.active .top .logo {
+    opacity: 100;
+}
+.top .logo i {
+    font-size: .2rem;
+    margin-right: 5px;
+
+}
+.user {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.user p {
+    color: white;
+    opacity: 1;
+    margin-left: 1rem;
+
+}
+.bold {
+    font-weight: 600;
+}
+.sidebar p {
+    opacity: 0;
+}
+.sidebar.active p {
+    opacity: 1;
+}
+.sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 50px;
+}
+.sidebar ul li a {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+}
+.sidebar ul li a:hover {
+    background-color: rgb(140, 3, 3);
+    color: rgb(255, 255, 255);
+}
+.sidebar ul li a i {
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+}
+.sidebar .nav-item {
+    opacity: 0;
+}
+.sidebar.active .nav-item {
+    opacity: 1;
+}
+.sidebar ul li .tooltip {
+        position: absolute;
+        left: 120px;
+        top: 50%;
+        transform: translate(-50%, 50%);
+        box-shadow: 0 0.5rem 0.8rem rgb(140, 3, 3);
+        border-radius: .6rem;
+        padding:.4rem 1.2rem;
+        line-height: 1.8rem;
+        z-index: 20;
+        opacity: 0;
+        color: white;
+}
+.sidebar ul li:hover .tooltip {
+    opacity:1;
+}
+.sidebar.active ul li .tooltip {
+    display: none;
+}
+.main-content {
+    position: relative;
+    background-color: rgb(31, 30, 30);
+    min-height: max-content;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+    padding: 1rem;
+}
+.main-content .container .wrapper {
+    margin: 100px auto;
+    width: 70%;
+}
+.textbox {
+    color: white;
+}
+.textbox h1 {
+    font-size: 90px;
+}
+.textbox p {
+    font-size: 41px;
+}
+.textbox a {
+    font-size:41px;
+}
+.slider-left {
+    width: 500px;
+    height: 500px;
+    border-radius: 30%;
+    overflow: hidden;
+    float: left;
+    margin-right: 40px
+}
+.slider-right {
+    width: 500px;
+    height: 500px;
+    border-radius: 30%;
+    overflow: hidden;
+    float: right;
+    margin-left: 40px;
+}
+.wrapper img {
+    width: 500px;
+    height: 500px;
+    border-radius: 30%;
+    float: right;
+    margin-left: 40px;
+}
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 20%;
+    transition: 1s;
+}
+.slide img {
+    width: 500px;
+    height: 500px;
+}
+.navigation-manual {
+    position: absolute;
+    width: 500px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+.manual-btn:hover {
+    background-color: white;
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+#radio5:checked ~ .second {
+    margin-left: 0;
+}
+#radio6:checked ~ .second {
+    margin-left: -20%;
+}
+#radio7:checked ~ .second {
+    margin-left: -40%;
+}
+#radio8:checked ~ .second {
+    margin-left: -60%;
+}
+#radio9:checked ~ .third {
+    margin-left: 0;
+}
+#radio10:checked ~ .third {
+    margin-left: -20%;
+}
+#radio11:checked ~ .third {
+    margin-left: -40%;
+}
+#radio12:checked ~ .third {
+    margin-left: -60%;
+}

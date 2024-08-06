@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>About Me</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="top">
+                <div class="logo">
+                    <span>Portfolio</span>
+                </div>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+            <div class="user">
+                <img src="perfil.jpg" alt="me" class="perfil">
+                <div>
+                    <p class="bold">Jose Correa</p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="bx bxs-user-circle" id="myself"></i>
+                        <span class="nav-item">Myself</span>
+                    </a>
+                    <span class="tooltip">Myself</span>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <i class="bx bx-laptop" id="projects"></i>
+                        <span class="nav-item">Projects</span>
+                    </a>
+                    <span class="tooltip">Projects</span>
+                </li>
+                <li>
+                    <a href="hobbies.html">
+                        <i class="bx bx-football" id="hobbies"></i>
+                        <span class="nav-item">Hobbies</span>
+                    </a>
+                    <span class="tooltip">Hobbies</span>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="bx bxs-phone" id="contact"></i>
+                        <span class="nav-item">Contact</span>
+                    </a>
+                    <span class="tooltip">Contact Me</span>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="slider-left">
+                        <div class="slides">
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            <div class="slide first">
+                                <img src="images/telephone.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="images/playa.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="images/familia.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="images/familia2.jpg">
+                            </div>
+                        </div>
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <h1>About Myself</h1>
+                        <p>My Name is Jose Maria Correa and I was born and raised in Medellín Colombia. I grew up in a small family with only my parents and my older brother. When I turned 8, we moved to El Retiro where I’ve been living since then.</p>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="slider-right">
+                        <div class="slides">
+                            <input type="radio" name="radio-btn" id="radio5">
+                            <input type="radio" name="radio-btn" id="radio6">
+                            <input type="radio" name="radio-btn" id="radio7">
+                            <input type="radio" name="radio-btn" id="radio8">
+                            <div class="slide second">
+                                <img src="images/eia2.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="images/eia.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="images/school2.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="images/school.png">
+                            </div>
+                        </div>
+                        <div class="navigation-manual">
+                            <label for="radio5" class="manual-btn"></label>
+                            <label for="radio6" class="manual-btn"></label>
+                            <label for="radio7" class="manual-btn"></label>
+                            <label for="radio8" class="manual-btn"></label>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <h1>Education</h1>
+                        <p>I studied and graduated from The Columbus School in 2020 during the Covid pandemic. <br>Since 2021 I have been studying Systems and Computer Engineering in Universidad EIA.</p>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="slider-left">
+                        <div class="slides">
+                            <input type="radio" name="radio-btn" id="radio9">
+                            <input type="radio" name="radio-btn" id="radio10">
+                            <input type="radio" name="radio-btn" id="radio11">
+                            <input type="radio" name="radio-btn" id="radio12">
+                            <div class="slide third">
+                                <img src="images/guitar.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="images/concierto.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="images/angkor.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="images/fyah.jpeg">
+                            </div>
+                        </div>
+                        <div class="navigation-manual">
+                            <label for="radio9" class="manual-btn"></label>
+                            <label for="radio10" class="manual-btn"></label>
+                            <label for="radio11" class="manual-btn"></label>
+                            <label for="radio12" class="manual-btn"></label>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <h1>Work</h1>
+                        <p>I have been working as a musician half time with multiple artists and bands from various music genres. I’m a composer, arranger, and performer mainly focused on playing electric guitar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+
+        btn.onclick = function() {
+            sidebar.classList.toggle('active');
+        };
+    </script>
+</html>
